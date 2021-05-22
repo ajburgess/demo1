@@ -16,7 +16,7 @@
     
     <script>
         (async function () {
-            const response = await fetch(`/api/sayhello?name=Andrew`);
+            const response = await fetch(`/api/sayhello`);
             const text = await response.text();
             document.querySelector('#name').textContent = text;
         }())
